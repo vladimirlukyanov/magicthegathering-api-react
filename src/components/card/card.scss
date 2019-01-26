@@ -1,0 +1,33 @@
+.card {
+
+  display: block;
+  margin: .875em .5em;
+
+  border: none;
+  border-radius: .28571429rem;
+  -webkit-box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  -webkit-transition: -webkit-box-shadow .1s ease,-webkit-transform .1s ease;
+  transition: -webkit-box-shadow .1s ease,-webkit-transform .1s ease;
+  transition: box-shadow .1s ease,transform .1s ease,-webkit-box-shadow .1s ease,-webkit-transform .1s ease;
+
+  .title {
+    text-align: left;
+    margin:0;
+    padding:10px 15px;
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+
+  .img-wrapper {
+
+    text-align: center;
+    border-top: 1px solid rgba(34,36,38,.1);
+    padding:15px;
+
+    .img {
+      display: inline-block;
+      margin:0 auto;
+    }
+  }
+}
