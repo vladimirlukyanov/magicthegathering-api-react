@@ -21,6 +21,7 @@ class Cards extends PureComponent {
   render() {
 
     const {cards} = this.state;
+    let cardsList;
 
     cards.sort(function (a, b) {
       if (a.name < b.name) return -1;
@@ -32,7 +33,7 @@ class Cards extends PureComponent {
 
     if (cards.length > -1 && cards.length < 2) {
 
-      let remove_duplicates_arr = cards.filter(function(el) {
+      let remove_duplicates_arr = cards.filter(function (el) {
         return "imageUrl" in el;
       });
 
@@ -41,7 +42,7 @@ class Cards extends PureComponent {
 
     } else {
 
-      let remove_duplicates_arr = cards.filter(function(el) {
+      let remove_duplicates_arr = cards.filter(function (el) {
         return "imageUrl" in el;
       });
 
@@ -51,17 +52,33 @@ class Cards extends PureComponent {
 
     }
 
+    if (this.state.cards.length > 0) {
+      cardsList = cards_arr.map((item, i) =>
+        <div className="row" key={'row' + i}>
+          {item.map((card, k) =>
+            <div className="md-one-third">
+              <Card key={'card' + k} name={card.name} img={card.imageUrl} number={card.multiverseid}></Card>
+            </div>
+          )}
+        </div>
+      );
+    } else {
+      cardsList = <div className="loader"></div>
+    }
+
     return (
       <div className="container configurator">
         <Topnav></Topnav>
         <div className="row">
           <div className="md-16">
-            {cards_arr.map((item, i) =>
-              <div className="row" key={'row' + i}>
-                {item.map((card, k) => <div className="md-one-third"><Card key={'card' + k} name={card.name}
-                                                                           img={card.imageUrl} number={card.multiverseid}></Card></div>)}
+            <div className="dimmer cards">
+              <div className="content">
+                <div>
+                  {cardsList}
+                </div>
               </div>
-            )}
+            </div>
+
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ class Topnav extends Component {
   render() {
     return (
 
-      <div className="mb-top-nav">
+      <div className="top-nav">
         <ul className="nav nav-horizontal">
 
           <li className="hamburger">
