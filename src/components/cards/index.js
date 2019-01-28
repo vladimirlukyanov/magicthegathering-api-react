@@ -67,16 +67,12 @@ class Cards extends PureComponent {
     }
 
     return (
-      <div className="container configurator">
+      <div className="container cards">
         <Topnav></Topnav>
-        <div className="row">
+        <div className="row content">
           <div className="md-16">
-            <div className="dimmer cards">
-              <div className="content">
-                <div>
-                  {cardsList}
-                </div>
-              </div>
+            <div className="dimmer">
+              {cardsList}
             </div>
 
           </div>

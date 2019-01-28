@@ -13,7 +13,8 @@ class Configurator extends Component {
     return (
       <div className="welcome">
         <div className="wrapper">
-          <div className="container">
+
+          <div className="container content">
             <div className="row">
               <div className="md-16">
 
@@ -26,12 +27,11 @@ class Configurator extends Component {
               </div>
             </div>
           </div>
-          <div className="container">
+
+          <div className="container footer">
             <div className="row">
-              <div className="md-16">
-
-                sdfsdfsdf
-
+              <div className="md-16 text">
+                NOT AFFILIATED WITH WIZARDS OF THE COAST
               </div>
             </div>
           </div>

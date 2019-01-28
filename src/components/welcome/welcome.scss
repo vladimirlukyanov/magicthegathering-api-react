@@ -11,8 +11,25 @@
   justify-content: center;
 
   .wrapper {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+
+    .content {
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+      padding:25px 0;
+    }
+
+    .footer {
+      color:#fff;
+      padding:20px;
+
+      .text {
+        font-size:0.8rem;
+        font-weight: 300;
+        text-align: center;
+        letter-spacing: 1px;
+      }
+    }
+
   }
 
   .logo {
@@ -32,6 +49,7 @@
     font-weight: 300;
 
     transition: all 0.3s;
+    letter-spacing: 1px;
 
 
     &:hover {

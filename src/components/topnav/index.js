@@ -23,7 +23,7 @@ class Topnav extends Component {
           </li>
 
           <li className="nav-logo">
-            <Link to="/">Top Bar Title</Link>
+            <Link to="/cards"></Link>
           </li>
 
         </ul>
