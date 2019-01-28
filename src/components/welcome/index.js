@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './welcome.scss';
 import logo from './logo.png';
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 class Configurator extends Component {
 
@@ -11,17 +11,29 @@ class Configurator extends Component {
 
   render() {
     return (
-      <div className="container welcome">
-        <div className="row">
-          <div className="md-16">
+      <div className="welcome">
+        <div className="wrapper">
+          <div className="container">
+            <div className="row">
+              <div className="md-16">
 
-            <h1 className="text-center">MagicTheGathering Wizard</h1>
-            <div className="text-center">
-              <img src={logo} className="logo" alt="Mercedes-benz logo"/>
-              <br />
-              <Link to="/cards" className="btn btn-default">Configurator</Link>
+                <div className="text-center">
+                  <img src={logo} className="logo" alt="Mercedes-benz logo"/>
+                  <br/>
+                  <Link to="/cards" className="btn btn-default btn-large">Configurator</Link>
+                </div>
+
+              </div>
             </div>
+          </div>
+          <div className="container">
+            <div className="row">
+              <div className="md-16">
 
+                sdfsdfsdf
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
